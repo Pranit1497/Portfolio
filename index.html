@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranit Vyawahare | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #020617;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #334155;
+    }
+
+    nav h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    header {
+      padding: 80px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #1e3a8a, #6d28d9);
+    }
+
+    header h1 {
+      font-size: 46px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #e0e7ff;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    section {
+      padding: 50px 8%;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 24px;
+      font-size: 30px;
+    }
+
+    h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 24px;
+      margin-bottom: 22px;
+      border-radius: 14px;
+      border: 1px solid #334155;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #334155;
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      color: #f8fafc;
+    }
+
+    ul {
+      margin-left: 22px;
+      margin-top: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .project-card p {
+      margin-bottom: 12px;
+      color: #cbd5e1;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #334155;
+      color: #f8fafc;
+      padding: 7px 12px;
+      margin: 5px 4px 10px 0;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 14px;
+      margin-right: 10px;
+      padding: 10px 16px;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn.secondary {
+      background: #334155;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 850px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>Pranit Vyawahare</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Pranit Vyawahare</h1>
+    <p>
+      Python | Web Development | AI Systems | Graphic Design | UI Development
+    </p>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        Software developer focused on building web-based applications, improving user workflows,
+        designing clean digital experiences, and applying AI-assisted tools to support faster
+        analysis, testing, and application improvements.
+      </p>
+      <br />
+      <p>
+        My work includes customer-facing applications, workflow-driven platforms, form-based systems,
+        API-driven development, structured data handling, UI improvements, and responsive digital experiences.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>Python</span>
+      <span>Flask</span>
+      <span>Web Development</span>
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Responsive Design</span>
+      <span>REST APIs</span>
+      <span>Data Processing</span>
+      <span>Workflow Automation</span>
+      <span>AI Systems</span>
+      <span>Prompt Engineering</span>
+      <span>Text Processing</span>
+      <span>UI Design</span>
+      <span>Graphic Design</span>
+      <span>Figma</span>
+      <span>Canva</span>
+      <span>GitHub</span>
+      <span>Render</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Personal Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Resume Analyzer</h3>
+        <p><strong>Type:</strong> Personal Website UI Project</p>
+        <p>
+          Designed and developed a responsive Resume Analyzer interface that compares resume
+          content against job descriptions. The application highlights matching skills, identifies
+          missing keywords, calculates a match score, and provides improvement recommendations
+          through an interactive dashboard.
+        </p>
+
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Responsive UI</span>
+        <span class="tag">Text Processing</span>
+
+        <ul>
+          <li>Built a responsive website UI with navigation, feature cards, and analyzer dashboard.</li>
+          <li>Implemented resume and job description comparison using JavaScript.</li>
+          <li>Displayed matched skills, missing skills, score, and recommendations.</li>
+          <li>Designed a clean frontend layout focused on usability and presentation.</li>
+        </ul>
+
+        <a class="btn" href="https://pranit1497.github.io/Resume-Analyzer/" target="_blank">Live Demo</a>
+        <a class="btn secondary" href="https://github.com/Pranit1497/Resume-Analyzer" target="_blank">Source Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Smart Expense Tracker</h3>
+        <p><strong>Type:</strong> Personal Python Web Project</p>
+        <p>
+          Developed a Python Flask web application to record expenses, calculate total spending,
+          view category-wise summaries, delete records, and display spending insights through
+          a responsive dashboard interface.
+        </p>
+
+        <span class="tag">Python</span>
+        <span class="tag">Flask</span>
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Dashboard UI</span>
+
+        <ul>
+          <li>Created backend routes using Python and Flask.</li>
+          <li>Built forms to add and manage expense records.</li>
+          <li>Displayed total spending, average expense, highest expense, and category summaries.</li>
+          <li>Designed a responsive dashboard-style web interface.</li>
+        </ul>
+
+        <a class="btn" href="https://smartexpensetracker.onrender.com" target="_blank">Live Demo</a>
+        <a class="btn secondary" href="https://github.com/Pranit1497/SmartExpenseTracker" target="_blank">Source Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Text Insight Summarizer</h3>
+        <p><strong>Type:</strong> Personal Python Web Project</p>
+        <p>
+          Built a Python Flask text analysis tool that summarizes long-form content,
+          detects important keywords, calculates word count, sentence count, and reading time.
+        </p>
+
+        <span class="tag">Python</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Text Processing</span>
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+
+        <ul>
+          <li>Implemented text input and analysis workflow using Python Flask.</li>
+          <li>Generated summaries by extracting key sentences from submitted text.</li>
+          <li>Detected tracked keywords and displayed content statistics.</li>
+          <li>Built a clean web UI for reviewing summaries and insights.</li>
+        </ul>
+
+        <a class="btn" href="https://text-insight-summarizer.onrender.com" target="_blank">Live Demo</a>
+        <a class="btn secondary" href="https://github.com/Pranit1497/Text-Insight-Summarizer" target="_blank">Source Code</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Project Experience</h2>
+
+    <div class="card">
+      <h3>Digital Wallet & Card Management Application</h3>
+      <p><strong>Domain:</strong> Financial Technology</p>
+      <ul>
+        <li>Built user-facing workflows for digital wallet provisioning and card management actions.</li>
+        <li>Worked on screens for card freeze, replacement, and lost/stolen card reporting.</li>
+        <li>Worked with structured API responses to display accurate user and card information.</li>
+        <li>Used AI-assisted tools to review workflows, improve test scenarios, summarize defects, and support faster issue analysis.</li>
+        <li>Improved visual structure, spacing, accessibility, and user interaction across application screens.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Order Tracking Web Application</h3>
+      <p><strong>Domain:</strong> Retail</p>
+      <ul>
+        <li>Built user-facing web screens for order tracking and status visibility.</li>
+        <li>Integrated APIs to retrieve and display order information.</li>
+        <li>Worked with structured data returned from backend services and displayed it in a user-friendly format.</li>
+        <li>Improved usability through cleaner layouts, visual hierarchy, and responsive design.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Insurance Claims Management System</h3>
+      <p><strong>Domain:</strong> Insurance</p>
+      <ul>
+        <li>Developed form-based workflows for insurance claim processing.</li>
+        <li>Worked with structured claim and policy data across application screens.</li>
+        <li>Improved validation logic to reduce incorrect or incomplete data submission.</li>
+        <li>Worked with backend services to process and retrieve claim-related information.</li>
+        <li>Improved layout clarity, form usability, and user-friendly screen behavior.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>AI & Python Focus</h2>
+    <div class="card">
+      <p>
+        Python and AI are part of my current technical focus for automation, data handling,
+        document processing, workflow improvement, and AI-powered application support.
+        I continue to enhance my personal projects whenever I get time by adding practical
+        features and improving the user experience.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> your.email@example.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Pranit1497" target="_blank">https://github.com/Pranit1497</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">https://linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Pranit Vyawahare. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
